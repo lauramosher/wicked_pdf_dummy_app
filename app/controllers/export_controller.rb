@@ -5,8 +5,7 @@ class ExportController < ApplicationController
       format.pdf do
         render pdf: 'my_pdf',
                layout: 'export',
-               template: 'export_data/report_template.pdf.erb',
-               show_as_html: false
+               template: 'export_data/report_template.pdf.erb'
       end
     end
   end
